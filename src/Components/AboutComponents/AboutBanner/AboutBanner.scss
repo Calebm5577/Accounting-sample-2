@@ -1,0 +1,52 @@
+.AboutBanner {
+    height: 200px;
+    background-image: linear-gradient(
+        to right bottom, rgba(black, 0.6), rgba(black, 0.6)), url('../../../images/banner1Large.jpg');
+    //background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    //background-attachment: fixed;
+
+    & h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-size: 48px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+    .AboutBanner {
+        height: 300px;
+        
+    }
+
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    .AboutBanner {
+        flex-direction: column;
+        justify-content: center;
+        height: 350px;
+
+
+    }
+
+  
+}
+

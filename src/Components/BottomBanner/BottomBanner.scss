@@ -1,0 +1,58 @@
+.BottomBanner {
+    height: 300px;
+    background-image: linear-gradient(rgba(black, 0.65), rgba(black, 0.65)), url('../../images/BottomBanner.jpg');
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+    & h3 {
+        
+    }
+
+    & div {
+    }
+
+    &-div1 {
+
+        &-div1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            & span {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-div2 {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+
+
+            & span {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & p {
+                    padding-left: 10px;
+                }
+
+            }
+        }
+    }
+}

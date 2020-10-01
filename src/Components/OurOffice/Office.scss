@@ -1,0 +1,77 @@
+.Office {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+
+    & div {
+
+        & h1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        & p {
+            text-align: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            max-width: 350px;
+        }
+
+    }
+
+    &-div1 {
+        display: none;
+        min-height: 350px;
+        //max-width: 650px;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-image: url('../../images/office.jpg');
+    }
+
+    &-div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+   
+}
+
+.Link3 {
+    color: #527798;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .Office {
+        flex-direction: row;
+
+        &-div1 {
+            width: 50%;
+            display: flex;
+        }
+
+        &-div2 {
+            width: 50%;
+        }
+    }
+}
+
+// @media screen and (min-width: 800px) {
+
+//     .Office {
+//         flex-direction: row;
+//         align-items: center;
+//         justify-content: center;
+
+//         &-div1 {
+//             display: block;
+//         }
+//     }
+// }
